@@ -1,0 +1,53 @@
+\documentclass{nusthesis}
+
+% --------------------------------------------------
+% Basic information
+% --------------------------------------------------
+
+\title{$if(title)$$title$$else$DEFINE TITLE$endif$}
+\author{$if(author)$$author$$else$DEFINE AUTHOR$endif$}
+\qualification{B.Eng. (Hons.), NUS}
+
+\degree{$if(degree)$$degree$$else$DEFINE DEGREE$endif$}
+
+\university{National University of Singapore}
+\department{Department of Electrical and \\Computer Engineering}
+
+\submityear{$if(year)$$year$$else$\the\year$endif$}
+
+
+\date{\today}
+
+\begin{document}
+
+% --------------------------------------------------
+% Build the cover page, title page, declaration,
+% dedication and acknowledgement pages
+% --------------------------------------------------
+\frontmatter
+\maketitle
+\declarationpage{}
+
+\newpage
+\acknowledgment{$if(thanks)$$thanks$$else$Thanks for nothing, suckers$endif$}
+
+
+% --------------------------------------------------
+% Table of contents, abstract,
+% lists of tables, figures and symbols
+% --------------------------------------------------
+\tableofcontents
+\newpage
+\abstract{$if(abstract)$$abstact$$else$You need an abstract$endif$}
+
+\listoftables
+\listoffigures
+\listofsymbolsnabbrev
+
+% --------------------------------------------------
+% Main content of thesis organized into chapters
+% --------------------------------------------------
+$body$
+
+
+\end{document}
