@@ -1,3 +1,7 @@
+% -*-LaTeX-*-
+% This is a pandoc template for a latex thesis
+% 
+
 \documentclass{nusthesis}
 
 % --------------------------------------------------
