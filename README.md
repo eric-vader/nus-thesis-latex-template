@@ -1,34 +1,33 @@
 National University of Singapore (NUS) LaTeX template
 =====================================================
 
-A LaTeX template following NUS specifications for Masters/ PhD theses.
+A LaTeX template following NUS specifications for HYP / Masters/ PhD theses. Meant to work with Pandoc from Markdown source.
+
 
 ## Synopsis
 
-### on \*nix
-```bash
-wget https://raw.githubusercontent.com/ramananbalakrishnan/nus-thesis-latex-template/master/nus-thesis-latex-template.tar.gz
-tar xvzf nus-thesis-latex-template.tar.gz
-cd nus-thesis-latex-template
-# <edit thesis_contents.tex to your liking>
-# <add your references to reference_list.bib>
-./make
-# <the ./make command accepts an (optional) argument denoting the filename (if different from thesis_contents.tex)>
-```
+- install LaTeX
+- install pandoc
 
-### on Windows
-> Install TexLive
-> Download nus-thesis-latex-template.tar.gz and unzip to a folder
-> Edit the .tex and .bib files
-> Use pdflatex / bibtex to build the files
+The key files for pandoc to work can be in the same directory as your thesis materials, but might be better in the appropriate directories, as follows
 
-Recommended setup: TexLive + Texworks
+- Place nusthesis.cls somewhere in `$TEXMFHOME` where LaTeX can find it.
+- Place nus-thesis.latex in the pandoc template folder. By default, this is ~/.pandoc/templates.
+- Put the CSL file for the bibliography style you plan to use in ~/.csl
+- Write your thesis in pandoc markdown. Use pandoc-citeproc style references.
+- Edit the Makefile as needed.
+- Write your thesis.
+- Profit!
 
 ## Author
-Ramanan Balakrishnan
+
+Greg Tucker-Kellogg, but almost everything is currently derived from the two prior works below.
 
 ## Acknowledgements
-This work is based on the
+
+- This work is based on  https://github.com/ramananbalakrishnan/nus-thesis-latex-template by Ramanan Balakrishnan
+
+- This work is based on the
 [unofficial-nus-thesis-org-latex-template](https://github.com/bowenli37/unofficial-NUS-thesis-org-latex-template) developed by
 [bowenli37](https://github.com/bowenli37)
 
