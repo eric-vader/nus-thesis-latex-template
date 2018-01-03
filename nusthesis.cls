@@ -42,7 +42,6 @@
 
 \RequirePackage{hyperref}
 \hypersetup{
- colorlinks,
  linkcolor = DarkBlue,
  citecolor = DarkBlue,
  plainpages = false,

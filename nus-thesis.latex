@@ -1,7 +1,7 @@
 % -*-LaTeX-*-
 % This is a pandoc template for a latex thesis
 % 
-
+\PassOptionsToPackage{colorlinks=false}{hyperref} % options for packages loaded elsewhere
 \documentclass{nusthesis}
 
 % --------------------------------------------------
@@ -65,5 +65,6 @@
 % --------------------------------------------------
 $body$
 
+\backmatter
 
 \end{document}
