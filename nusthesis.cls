@@ -9,9 +9,9 @@
 \PassOptionsToClass{12pt}{book}
 \PassOptionsToClass{oneside}{book}
 \PassOptionsToClass{openright}{book}
-\PassOptionsToClass{times}{book}
 \LoadClass{book}
 %Packages
+\RequirePackage{times}
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
 \RequirePackage[svgnames]{xcolor}
@@ -195,7 +195,7 @@ degree in any university previously. \\
 %Acknowledgment
 \newcommand{\acknowledgment}[1]{
 \vspace*{2.75cm}
-\chapfont{Acknowledgment}#1\vfill
+\chapfont{Acknowledgments}#1\vfill
 \newpage}
 
 %Abstract
@@ -221,7 +221,7 @@ degree in any university previously. \\
 \renewcommand{\chapfont}[1]{{\nohang\centering\mdseries\begin{Huge}#1\end{Huge}\vspace*{1cm}\\}}
 }
 
-%Format text referring to apendices
+%Format text referring to appendices
 \crefname{appsec}{Appendix}{Appendices}
 \crefname{figure}{Fig.}{Fig.}
 \crefname{table}{Table}{Tables}

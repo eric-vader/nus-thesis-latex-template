@@ -33,7 +33,16 @@
 \declarationpage{}
 
 \newpage
-\acknowledgment{$if(thanks)$$thanks$$else$Thanks for nothing, suckers$endif$}
+\acknowledgment{
+  $if(thanks)$
+  $thanks$
+  $else$
+
+  Thanks for nothing, suckers.
+
+  {\color{red}Seriously, please acknowledge someone with a ``thanks'' metadata in the pandoc}
+  $endif$
+}
 
 
 % --------------------------------------------------
@@ -42,11 +51,14 @@
 % --------------------------------------------------
 \tableofcontents
 \newpage
-\abstract{$if(abstract)$$abstact$$else$You need an abstract$endif$}
+
+\abstract{$if(abstract)$$abstract$$else$PUT ABSTRACT HERE$endif$}
 
 \listoftables
 \listoffigures
 \listofsymbolsnabbrev
+
+\mainmatter
 
 % --------------------------------------------------
 % Main content of thesis organized into chapters
