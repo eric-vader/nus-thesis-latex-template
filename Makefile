@@ -10,9 +10,17 @@ CSL = default
 BIB = refs.bib
 
 thesis: test-thesis.pdf
-
 %.pdf:	%.md
 	pandoc -r markdown+$(EXTENSIONS) -s --pdf-engine=$(PDFENGINE) \
 	$(FILTERS)  \
-	--template=gtk-article \
+	--template=nus-thesis \
 	--csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
+
+
+%.tex:	%.md
+	pandoc -r markdown+$(EXTENSIONS) -s --pdf-engine=$(PDFENGINE) \
+	--template=nus-thesis \
+	$(FILTERS)  \
+	--csl=$(CSL).csl --bibliography=$(BIB) -o $@ $<
+
+

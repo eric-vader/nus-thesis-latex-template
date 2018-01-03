@@ -10,17 +10,17 @@
 
 \title{$if(title)$$title$$else$DEFINE TITLE$endif$}
 \author{$if(author)$$author$$else$DEFINE AUTHOR$endif$}
-\qualification{B.Eng. (Hons.), NUS}
+\qualification{$if(qualification)$$qualification$$else$DEFINE QUALIFICATION$endif$}
 
-\degree{$if(degree)$$degree$$else$DEFINE DEGREE$endif$}
+\degree{\\ $if(degree)$$degree$$else$DEFINE DEGREE$endif$}
 
 \university{National University of Singapore}
-\department{Department of Electrical and \\Computer Engineering}
+\department{$if(department)$$department$$else$DEFINE DEPARTMENT$endif$}
 
 \submityear{$if(year)$$year$$else$\the\year$endif$}
 
 
-\date{\today}
+\date{$if(date)$$date$$else$\today$endif$}
 
 \begin{document}
 

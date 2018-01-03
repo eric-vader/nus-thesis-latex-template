@@ -1,11 +1,12 @@
 ---
+documentclass: book
 title: my title
 author: me
 degree: Doctor of Philosophy
-year: 1984
+year: 
 ---
 
-is this a chapter?
+Chapter 1
 ==================
 
 Some stuff
