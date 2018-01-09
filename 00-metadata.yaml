@@ -10,5 +10,11 @@ thanks: |
   The little people can go here in the second paragraph.
 abstract: |
   This is an abstract.  It can be multiple paragraphs
+figPrefix: 
+ - "Figure"
+ - "Figures"
+tblPrefix: 
+ - "Table"
+ - "Tables"
 ---
 

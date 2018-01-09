@@ -24,6 +24,8 @@
 \RequirePackage{amsmath}
 \RequirePackage{lipsum}
 \RequirePackage{subfig}
+\RequirePackage{longtable}
+\RequirePackage{booktabs}
 \RequirePackage{mathtools}
 \RequirePackage{multirow}
 \RequirePackage{multicol}

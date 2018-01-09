@@ -8,7 +8,7 @@
 % Basic information
 % --------------------------------------------------
 
-\title{$if(title)$$title$$else$DEFINE TITLE$endif$}
+\title{$if(title)$$title$$else$please set a title: in the metadata$endif$}
 \author{$if(author)$$author$$else$DEFINE AUTHOR$endif$}
 \qualification{$if(qualification)$$qualification$$else$DEFINE QUALIFICATION$endif$}
 
