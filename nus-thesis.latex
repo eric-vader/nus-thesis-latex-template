@@ -4,6 +4,20 @@
 \PassOptionsToPackage{colorlinks=false}{hyperref} % options for packages loaded elsewhere
 \documentclass{nusthesis}
 
+\ifxetex
+\usepackage{unicode-math}
+\setmainfont
+[    Extension = .otf,
+   UprightFont = *-regular,
+      BoldFont = *-bold,
+    ItalicFont = *-italic,
+BoldItalicFont = *-bolditalic,
+]{xits}
+\setmathfont
+[    Extension = .otf,
+      BoldFont = *bold,
+]{xits-math}
+\fi
 % --------------------------------------------------
 % Basic information
 % --------------------------------------------------

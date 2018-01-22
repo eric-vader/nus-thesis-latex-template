@@ -11,11 +11,14 @@
 \PassOptionsToClass{openright}{book}
 \LoadClass{book}
 %Packages
-\RequirePackage{times}
+%\RequirePackage{times}
+\RequirePackage[]{stix}
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
+\RequirePackage{ifxetex}
+\RequirePackage{ifluatex}
 \RequirePackage[svgnames]{xcolor}
-\RequirePackage[pdftex]{graphicx}
+\RequirePackage[]{graphicx}
 \RequirePackage{epstopdf}
 \RequirePackage{setspace}
 \RequirePackage{sectsty}
@@ -41,6 +44,15 @@
 \RequirePackage{mdwtab}
 \RequirePackage{caption}
 \RequirePackage{floatrow}
+
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \RequirePackage[T1]{fontenc}
+  \RequirePackage[utf8]{inputenc}
+  \RequirePackage{textcomp} % provides euro and other symbols
+  \else % if luatex or xelatex
+  \RequirePackage{fontspec}
+  \RequirePackage{xunicode}
+\fi
 
 \RequirePackage{hyperref}
 \hypersetup{
