@@ -1,0 +1,6 @@
+name: pandoc
+channels:
+  - conda-forge
+dependencies:
+  - conda-forge::pandoc-crossref
+prefix: /home/Eric_Vader/.conda/envs/pandoc
