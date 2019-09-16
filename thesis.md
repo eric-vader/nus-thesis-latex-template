@@ -1,9 +1,11 @@
 ---
 documentclass: book
-title: my title
-author: me
+title: Towards Scalable High Dimensional Bayesian Optimization
+author: Han Liang Wee, Eric
 degree: Doctor of Philosophy
-year: 2018
+qualification: B.Comp. (Hons), NUS
+department: School of Computing
+year: 2019
 thanks: |
   This is a multi-line, multi-paragraph expression of gratitude.
 
@@ -16,25 +18,28 @@ figPrefix:
 tblPrefix: 
  - "Table"
  - "Tables"
+reference-section-title: Bibliography
+link-citations: true
 ---
 
-
-Introduction
-==================
+# Introduction
 
 Some stuff is shown in [@Tbl:test_table].
 
-
-Table: my first table {#tbl:test_table}
-
 A column      Another column
 -----------   -----------------
-This is       This is something
+This is  whayydydyd      This is something
 a piece of
 data
 This?         This is a row
 
+Table: my first table {#tbl:test_table}
 
+Blah blah [@Balakrishnan2013].
+
+## Second Lvl
+
+Hello world
 
 Methods and Materials
 ==================
@@ -47,8 +52,11 @@ $$ {#eq:test}
 
 Some stuff including something in [@Fig:smallfigure], and a reference in @Eq:test.
 
-![Let's make the caption longer. This is some image in a figure with a big long caption](images/small_fig.pdf){#fig:smallfigure short-caption="A short caption"}
+![Let's make the caption longer.](images/fig.pdf){#fig:smallfigure short-caption="A short caption" width=100%}
 
 
 
 
+\appendix
+# Very Long Proof
+Prove....

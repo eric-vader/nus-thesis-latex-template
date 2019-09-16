@@ -12,6 +12,8 @@
 \LoadClass{book}
 %Packages
 %\RequirePackage{times}
+% has to be above tables if not it will break the floating of the tables
+\RequirePackage{floatrow}
 \RequirePackage[]{stix}
 \RequirePackage[UKenglish]{isodate}
 \RequirePackage{color}
@@ -43,7 +45,6 @@
 \RequirePackage[titletoc]{appendix}
 \RequirePackage{mdwtab}
 \RequirePackage{caption}
-\RequirePackage{floatrow}
 
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \RequirePackage[T1]{fontenc}
@@ -127,9 +128,7 @@
 \DeclareCaptionFormat{hfillstart}{#1#2#3}
 \DeclareFloatFont{normalsize}{\normalsize}
 \captionsetup[table]{
-  format=hfillstart,
-  labelsep=newline,
-  justification=centering,
+  labelsep=period
 }
 
 % Figure caption
@@ -169,7 +168,7 @@
 
 %Title Page Footer
 \@ifundefined{titlepagefooter}{
-\newcommand{\titlepagefooter}{\large\bfseries\uppercase{A Thesis submitted\\ for the Degree of \uppercase\expandafter{\@degree}\\ \uppercase\expandafter{\@department}\\ \uppercase\expandafter{\@university}\\ 
+\newcommand{\titlepagefooter}{\large\bfseries\uppercase{A Thesis submitted\\ for the Qualifying Examination of \uppercase\expandafter{\@degree}\\ \uppercase\expandafter{\@department}\\ \uppercase\expandafter{\@university}\\ 
 \vspace*{2cm}\number\year}}}{}
 
 %Declaration Page

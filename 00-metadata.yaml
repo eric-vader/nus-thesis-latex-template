@@ -1,9 +1,11 @@
 ---
 documentclass: book
-title: my title
-author: me
+title: Towards Scalable High Dimensional Bayesian Optimization
+author: Han Liang Wee, Eric
 degree: Doctor of Philosophy
-year: 2018
+qualification: B.Comp. (Hons), NUS
+department: School of Computing
+year: 2019
 thanks: |
   This is a multi-line, multi-paragraph expression of gratitude.
 
@@ -16,5 +18,7 @@ figPrefix:
 tblPrefix: 
  - "Table"
  - "Tables"
+reference-section-title: Bibliography
+link-citations: true
 ---
 

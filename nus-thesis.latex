@@ -18,6 +18,7 @@ BoldItalicFont = *-bolditalic,
       BoldFont = *bold,
 ]{xits-math}
 \fi
+
 % --------------------------------------------------
 % Basic information
 % --------------------------------------------------
@@ -25,7 +26,6 @@ BoldItalicFont = *-bolditalic,
 \title{$if(title)$$title$$else$please set a title: in the metadata$endif$}
 \author{$if(author)$$author$$else$DEFINE AUTHOR$endif$}
 \qualification{$if(qualification)$$qualification$$else$DEFINE QUALIFICATION$endif$}
-
 \degree{\\ $if(degree)$$degree$$else$DEFINE DEGREE$endif$}
 
 \university{National University of Singapore}
@@ -37,6 +37,10 @@ BoldItalicFont = *-bolditalic,
 \date{$if(date)$$date$$else$\today$endif$}
 
 \begin{document}
+
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\floatsetup[table]{capposition=top}
+\floatsetup[figure]{capposition=top}
 
 % --------------------------------------------------
 % Build the cover page, title page, declaration,
@@ -78,7 +82,5 @@ BoldItalicFont = *-bolditalic,
 % Main content of thesis organized into chapters
 % --------------------------------------------------
 $body$
-
-\backmatter
 
 \end{document}
