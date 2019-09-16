@@ -132,9 +132,9 @@
 }
 
 % Figure caption
-\renewcommand{\figurename}{Fig.}
+\renewcommand{\figurename}{Figure}
 \captionsetup[figure]{
-  labelsep=period,
+  labelsep=period
 }
 
 \floatsetup[table]{capposition=top, font=normalsize}

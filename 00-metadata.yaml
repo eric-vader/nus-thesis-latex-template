@@ -7,11 +7,11 @@ qualification: B.Comp. (Hons), NUS
 department: School of Computing
 year: 2019
 thanks: |
-  This is a multi-line, multi-paragraph expression of gratitude.
-
-  The little people can go here in the second paragraph.
+  Thanks to Prof. Scarlett Jonathan
 abstract: |
-  This is an abstract.  It can be multiple paragraphs
+  This is an abstract.
+
+  It can be multiple paragraphs
 figPrefix: 
  - "Figure"
  - "Figures"
@@ -21,4 +21,3 @@ tblPrefix:
 reference-section-title: Bibliography
 link-citations: true
 ---
-

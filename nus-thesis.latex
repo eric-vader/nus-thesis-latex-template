@@ -39,7 +39,6 @@ BoldItalicFont = *-bolditalic,
 \begin{document}
 
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
-\floatsetup[table]{capposition=top}
 \floatsetup[figure]{capposition=top}
 
 % --------------------------------------------------

@@ -17,7 +17,7 @@ BIB = refs.bib
 
 thesis: thesis.pdf
 
-thesis.md: 00-metadata.yaml $(CHAPTERS) $(APPENDICES)
+thesis.md: 00-metadata.yaml abbrevations_symbols.tex $(CHAPTERS) $(APPENDICES)
 	cat $^ >| $@
 
 %.pdf:	%.md
@@ -35,3 +35,6 @@ thesis.md: 00-metadata.yaml $(CHAPTERS) $(APPENDICES)
 
 clean:
 	rm thesis.*
+	
+listen:
+	when-changed 00-metadata.yaml abbrevations_symbols.tex $(CHAPTERS) $(APPENDICES) -c make
